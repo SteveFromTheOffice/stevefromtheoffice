@@ -1,0 +1,7 @@
+.gridMain {
+  background-color: #36393f;
+  color: #fff;
+  grid-area: main;
+  min-height: 100vh;
+  padding: 2rem;
+}

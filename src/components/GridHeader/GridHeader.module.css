@@ -1,0 +1,21 @@
+.gridHeader {
+  align-items: center;
+  background-color: #202124;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  grid-area: header;
+  padding: 1rem;
+}
+
+.gridHeader img {
+  border: solid white 1px;
+  height: 30px;
+  width: 30px;
+}
+
+.gridHeader a {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+}

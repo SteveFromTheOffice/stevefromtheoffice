@@ -1,0 +1,8 @@
+.gridBreadcrumbs {
+  align-items: center;
+  background-color: #666;
+  color: #fff;
+  display: flex;
+  grid-area: breadcrumbs;
+  padding: 1em;
+}

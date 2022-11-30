@@ -1,0 +1,8 @@
+.gridFooter {
+  background-color: #202124;
+  color: #fff;
+  display: flex;
+  grid-area: footer;
+  justify-content: space-evenly;
+  padding: 4em 0em;
+}
