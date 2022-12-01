@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-
-import PageHeader from "../PageHeader/PageHeader.component";
-
 import { GetComponentList } from "../../lib/contentful";
-import styles from "./ComponentExplorer.module.scss";
+import PageHeader from "../PageHeader/PageHeader.component";
+import styles from "./ComponentPage.module.scss";
 
 function ComponentExplorer() {
   const [components, setComponents] = useState([]);
@@ -14,9 +12,13 @@ function ComponentExplorer() {
     });
   }, []);
 
+  const handleOnSearch = (query) => {
+    console.log(`Searched for ${query}`);
+  };
+
   return (
-    <section className={styles.componentExplorer}>
-      <PageHeader title="Components" />
+    <section className={styles.componentPage}>
+      <PageHeader title="Components" onSearch={handleOnSearch} />
       <ul>
         {components.map((component) => {
           return (

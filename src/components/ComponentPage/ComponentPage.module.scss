@@ -1,0 +1,18 @@
+.componentPage {
+}
+
+.componentPage > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.componentPage > ul li {
+  height: 200px;
+  padding: 1rem;
+  width: 50%;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+}

@@ -9,19 +9,25 @@ function PageHeader(props) {
     setQuery(e.target.value);
   };
 
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    props.onSearch(query);
+    setQuery("");
+  };
+
+  const searchForm = (
+    <form onSubmit={handleOnSubmit}>
+      <input onChange={handleOnChange} placeholder="Search..." value={query} />
+      <button>
+        <img alt="Search" src={SearchSvg} />
+      </button>
+    </form>
+  );
+
   return (
     <header className={style.componentHeader}>
       <h3>{props.title}</h3>
-      <form>
-        <input
-          onChange={handleOnChange}
-          placeholder="Search..."
-          value={query}
-        />
-        <button>
-          <img alt="Search" src={SearchSvg} />
-        </button>
-      </form>
+      {props.onSearch && searchForm}
     </header>
   );
 }

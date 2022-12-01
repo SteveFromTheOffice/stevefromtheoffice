@@ -1,17 +1,13 @@
-.componentExplorer {
+.componentPage {
 }
 
-.componentExplorer h2 {
-  margin-bottom: 20px;
-}
-
-.componentExplorer > ul {
+.componentPage > ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.componentExplorer > ul li {
+.componentPage > ul li {
   height: 200px;
   padding: 1rem;
   width: 50%;
