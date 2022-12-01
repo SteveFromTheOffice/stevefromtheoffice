@@ -1,0 +1,32 @@
+.componentHeader {
+  align-items: center;
+  background-color: #56595f;
+  display: flex;
+  font-size: 16px;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.componentHeader form {
+  display: flex;
+}
+
+.componentHeader input {
+  border: none;
+  height: 30px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.componentHeader button {
+  border: none;
+  width: 30px;
+  height: 30px;
+
+  img {
+    padding: 20%;
+    width: 100%;
+  }
+}

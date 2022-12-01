@@ -1,0 +1,36 @@
+.gridHeader {
+  align-items: center;
+  background-color: #202124;
+  color: #fff;
+  display: flex;
+  grid-area: header;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.gridHeader > img {
+  height: 70px;
+  padding: 5px 11px 15px 9px;
+  width: 70px;
+}
+.gridHeader a:hover {
+  background-color: #666;
+}
+.gridHeader img {
+  width: 100%;
+}
+
+.gridHeader a {
+  color: #fff;
+  height: 70px;
+  padding: 30%;
+  text-decoration: none;
+  width: 100%;
+}
+
+.grow {
+  flex-grow: 1;
+}

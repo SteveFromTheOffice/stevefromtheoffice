@@ -1,18 +1,7 @@
-import GridHeader from "../GridHeader/GridHeader.component";
-import GridBreadcrumbs from "../GridBreadcrumbs/GridBreadcrumbs.component";
-import GridMain from "../GridMain/GridMain.component";
-import GridFooter from "../GridFooter/GridFooter.component";
-
-import styles from "./GridLayout.module.css";
+import styles from "./GridLayout.module.scss";
 
 function GridLayout(props) {
-  return (
-    <div className={styles.gridLayout}>
-      <GridHeader />
-      <GridMain>{props.children}</GridMain>
-      <GridFooter />
-    </div>
-  );
+  return <div className={styles.gridLayout}>{props.children}</div>;
 }
 
 export default GridLayout;
