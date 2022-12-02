@@ -27,7 +27,7 @@ function PageHeader(props) {
   return (
     <header className={style.componentHeader}>
       <h3>{props.title}</h3>
-      {props.onSearch && searchForm}
+      {props.onSearch ? searchForm : null}
     </header>
   );
 }
