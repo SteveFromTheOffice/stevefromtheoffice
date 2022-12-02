@@ -23,7 +23,7 @@ function ComponentExplorer() {
         {components.map((component) => {
           return (
             <li key={component.id}>
-              <img src={component.thumbnail?.url || "#"} />
+              <img alt="TODO" src={component.thumbnail?.url || "#"} />
               <h3>{component.name}</h3>
               <p>{component.description}</p>
             </li>
